@@ -65,7 +65,7 @@ const getState = ({ getStore, getActions, setStore }) => {
                 };
 
                 try {
-                    const response = await fetch(`${process.env.BACKEND_URL}api/token`, options);
+                    const response = await fetch(`${process.env.BACKEND_URL}/api/token`, options);
 
                     if (!response.ok) {
                         const data = await response.json();
